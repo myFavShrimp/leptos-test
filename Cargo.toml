@@ -1,0 +1,28 @@
+[package]
+name = "leptos-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4"
+
+[dependencies.stylist]
+version = "0.12"
+features = ["parser"]
+
+[dependencies.leptos]
+version = "0.2.5"
+features = ["stable"]
+
+[dependencies.leptos_tea]
+path = "../leptos-tea/lib"
+features = ["stable"]
+
+[dependencies.leptos_meta]
+version = "0.2.5"
+features = ["csr"]
+
+[dependencies.grass]
+version = "0.12"
+default-features = false
+features = ["macro"]
